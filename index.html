@@ -216,191 +216,164 @@
     </section>
 
     <!-- Projets -->
-    <section id="projets" class="section" aria-labelledby="projets-title">
+    <section id="projets" class="section projects-section" aria-labelledby="projets-title">
       <div class="container">
-        <h2 id="projets-title" class="section-title">Projets sélectionnés</h2>
-        <p class="section-subtitle">Découvrez mes projets d'analyse de données, alliant rigueur statistique et
-          visualisation impactante.</p>
+        <div class="section-header-centered">
+          <h2 id="projets-title" class="section-title">Projets sélectionnés</h2>
+          <p class="section-subtitle">Analyse de données · Visualisation · Impact Business</p>
+        </div>
 
-        <!-- Projet 1 - Gaming & Performances Scolaires (PROJET PHARE) -->
-        <article class="project-featured">
-          <div class="project-header">
-            <div class="project-info">
-              <h3 class="project-title">Analyse de l'Impact des Jeux Vidéo sur les Performances Académiques</h3>
-              <p class="project-subtitle">Projet d'équipe (10 membres) • Analyse statistique avancée & Base de données
+        <!-- Projet 1 - Gaming & Performances Scolaires -->
+        <article class="project-card-modern">
+          <div class="project-content">
+            <div class="project-main">
+              <span class="project-badge">Projet d'équipe · 10 membres</span>
+              <h3 class="project-title-modern">Impact des Jeux Vidéo sur les Performances Académiques</h3>
+              <p class="project-lead">
+                Étude statistique complète analysant la corrélation entre temps de jeu et résultats scolaires,
+                avec conception d'une base de données relationnelle et interface d'exploration interactive.
               </p>
 
-              <!-- NEW: Impact Bar -->
-              <div class="impact-bar">
-                <div class="impact-stat">
-                  <span class="stat-value">👥 175</span>
-                  <span class="stat-label">Étudiants Analysés</span>
+              <!-- Métriques avec séparateurs -->
+              <div class="metrics-row">
+                <div class="metric-item">
+                  <span class="metric-value">175</span>
+                  <span class="metric-label">Étudiants analysés</span>
                 </div>
-                <div class="impact-stat">
-                  <span class="stat-value">📉 -2.6pts</span>
-                  <span class="stat-label">Impact Note (>9h/j)</span>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                  <span class="metric-value">-2.6 pts</span>
+                  <span class="metric-label">Impact notes (&gt;9h/j)</span>
                 </div>
-                <div class="impact-stat">
-                  <span class="stat-value">🎓 Lycée</span>
-                  <span class="stat-label">Cible Principale</span>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                  <span class="metric-value">5+</span>
+                  <span class="metric-label">Tests statistiques</span>
                 </div>
               </div>
-              <p class="project-description">
-                Étude complète menée en équipe pour analyser l'influence du temps consacré aux jeux vidéo et des
-                dépendances associées
-                sur les performances scolaires. Ce projet a impliqué la conception d'une base de données relationnelle
-                complète,
-                la collecte de données via questionnaires, et l'application de méthodes statistiques avancées pour
-                identifier
-                des corrélations significatives entre les habitudes de jeu et les résultats académiques.
-              </p>
-              <div class="project-objectives">
-                <h4>🎯 Objectifs du projet :</h4>
-                <ul>
-                  <li>Concevoir et implémenter une base de données relationnelle normalisée (MCD, ETL)</li>
-                  <li>Collecter et nettoyer des données via questionnaires structurés</li>
-                  <li>Analyser la distribution des performances scolaires par tranches de notes</li>
-                  <li>Étudier l'impact du temps de loisir (>9h) sur les résultats académiques</li>
-                  <li>Appliquer des tests statistiques avancés (Pearson, Spearman, Chi², Entropie)</li>
-                  <li>Développer une interface de filtrage interactif pour l'exploration des données</li>
-                  <li>Identifier les facteurs de dépendance et leur influence sur les performances</li>
-                </ul>
+
+              <!-- Points clés avec coches -->
+              <div class="features-grid">
+                <div class="feature-column">
+                  <h4 class="feature-title">Méthodologie</h4>
+                  <ul class="check-list">
+                    <li>Base de données relationnelle normalisée (MCD, ETL)</li>
+                    <li>Tests Pearson, Spearman, Chi², Entropie</li>
+                    <li>Interface de filtrage interactif</li>
+                  </ul>
+                </div>
+                <div class="feature-column">
+                  <h4 class="feature-title">Résultats</h4>
+                  <ul class="check-list">
+                    <li>Corrélation significative temps de jeu / notes</li>
+                    <li>Segmentation par niveau d'études des parents</li>
+                    <li>Recommandations actionnables</li>
+                  </ul>
+                </div>
               </div>
-              <div class="project-tech">
-                <span class="tag">Python</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">Matplotlib</span>
-                <span class="tag">Seaborn</span>
-                <span class="tag">SQL</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">ETL</span>
-                <span class="tag">Statistiques avancées</span>
-                <span class="tag">Modélisation BDD</span>
-                <span class="tag">Travail d'équipe</span>
+
+              <!-- Technologies -->
+              <div class="tech-stack-modern">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Matplotlib</span>
+                <span class="tech-pill">Seaborn</span>
               </div>
             </div>
-          </div>
 
-          <div class="project-gallery">
-            <div class="gallery-grid">
-              <div class="gallery-item">
-                <img src="img1.png" alt="Jauge temps de loisirs moyenne" class="gallery-img" data-zoom="img1.png" />
-                <div class="gallery-caption">Interface avec jauge temps de loisirs moyenne</div>
+            <!-- Galerie épurée -->
+            <div class="project-visuals">
+              <div class="visual-showcase">
+                <img src="img1.png" alt="Interface avec jauge temps de loisirs" class="showcase-img"
+                  data-zoom="img1.png" />
               </div>
-              <div class="gallery-item">
-                <img src="histogramme effectif eleves par tranche de notes.png"
-                  alt="Distribution des étudiants par tranches de notes" class="gallery-img"
-                  data-zoom="histogramme effectif eleves par tranche de notes.png" />
-                <div class="gallery-caption">Effectif des élèves par tranches de notes</div>
-              </div>
-              <div class="gallery-item">
-                <img src="img2.png" alt="Filtre niveau d'étude des parents" class="gallery-img" data-zoom="img2.png" />
-                <div class="gallery-caption">Filtre niveau d'étude des parents</div>
+              <div class="visual-grid-small">
+                <div class="visual-thumb" data-zoom="histogramme effectif eleves par tranche de notes.png">
+                  <img src="histogramme effectif eleves par tranche de notes.png" alt="Distribution des notes" />
+                </div>
+                <div class="visual-thumb" data-zoom="img2.png">
+                  <img src="img2.png" alt="Filtres interactifs" />
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="project-results">
-            <h4>✨ Résultats et Impacts :</h4>
-            <ul>
-              <li><strong>Distribution des performances :</strong> 175 étudiants (majorité) dans la tranche 10-15/20
-              </li>
-              <li><strong>Impact du temps de loisir :</strong> Scores théoriques de 10.7/20 à 13.3/20 pour >9h de loisir
-              </li>
-              <li><strong>Analyse multiniveau :</strong> Lycée et études supérieures montrent les meilleures
-                performances</li>
-              <li><strong>Base de données robuste :</strong> Architecture relationnelle normalisée avec processus ETL
-                complet</li>
-              <li><strong>Corrélations significatives :</strong> Relations identifiées entre temps de jeu et baisse des
-                performances (tests Pearson, Spearman, Chi²)</li>
-              <li><strong>Outil d'analyse interactif :</strong> Interface permettant le filtrage par niveau parental,
-                activités extrascolaires et consommation</li>
-              <li><strong>Méthodologie rigoureuse :</strong> Application de tests d'entropie et analyse statistique
-                approfondie</li>
-              <li><strong>Collaboration efficace :</strong> Gestion de projet d'équipe avec 10 membres, communication et
-                coordination</li>
-            </ul>
           </div>
         </article>
 
         <!-- Projet 2 - Arsoke -->
-        <article class="project-featured">
-          <div class="project-header">
-            <div class="project-info">
-              <h3 class="project-title">Analyse des passages - Arsoke</h3>
-              <p class="project-subtitle">Entreprise d'escalade • Analyse de données clients</p>
-
-              <!-- NEW: Impact Bar -->
-              <div class="impact-bar">
-                <div class="impact-stat">
-                  <span class="stat-value">🧗‍♂️ 1k+</span>
-                  <span class="stat-label">Passages/Mois</span>
-                </div>
-                <div class="impact-stat">
-                  <span class="stat-value">🔄 +15%</span>
-                  <span class="stat-label">Rétention Client</span>
-                </div>
-                <div class="impact-stat">
-                  <span class="stat-value">📊 Power BI</span>
-                  <span class="stat-label">Dashboard Live</span>
-                </div>
-              </div>
-              <p class="project-description">
-                Analyse complète des données de passages des adhérents d'Arsoke, une entreprise d'escalade.
-                J'ai développé des tableaux de bord interactifs pour suivre l'évolution des passages mensuels
-                et identifier les clients inactifs, permettant une meilleure gestion de la fidélisation.
+        <article class="project-card-modern">
+          <div class="project-content">
+            <div class="project-main">
+              <span class="project-badge">Entreprise · Analyse Client</span>
+              <h3 class="project-title-modern">Dashboard Arsoke - Analyse de Fréquentation</h3>
+              <p class="project-lead">
+                Tableaux de bord Power BI pour une salle d'escalade, permettant le suivi des passages
+                et l'identification des clients à risque de churn.
               </p>
-              <div class="project-objectives">
-                <h4>Objectifs :</h4>
-                <ul>
-                  <li>Analyser les tendances de fréquentation mensuelle</li>
-                  <li>Identifier les clients inactifs depuis plus de 6 mois</li>
-                  <li>Segmenter les clients par type d'abonnement</li>
-                  <li>Fournir des insights actionnables pour la rétention</li>
-                </ul>
+
+              <!-- Métriques avec séparateurs -->
+              <div class="metrics-row">
+                <div class="metric-item">
+                  <span class="metric-value">1K+</span>
+                  <span class="metric-label">Passages / mois</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                  <span class="metric-value">+15%</span>
+                  <span class="metric-label">Rétention client</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                  <span class="metric-value">14</span>
+                  <span class="metric-label">Clients réactivés</span>
+                </div>
               </div>
-              <div class="project-tech">
-                <span class="tag">Power BI</span>
-                <span class="tag">SQL</span>
-                <span class="tag">Excel</span>
-                <span class="tag">DataViz</span>
+
+              <!-- Points clés avec coches -->
+              <div class="features-grid">
+                <div class="feature-column">
+                  <h4 class="feature-title">Livrables</h4>
+                  <ul class="check-list">
+                    <li>Dashboard interactif Power BI</li>
+                    <li>Analyse des tendances mensuelles</li>
+                    <li>Segmentation par abonnement</li>
+                  </ul>
+                </div>
+                <div class="feature-column">
+                  <h4 class="feature-title">Insights</h4>
+                  <ul class="check-list">
+                    <li>69.4% des passages en tarif réduit</li>
+                    <li>81.1% utilisent des abonnements</li>
+                    <li>Stratégie de fidélisation proposée</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Technologies -->
+              <div class="tech-stack-modern">
+                <span class="tech-pill">Power BI</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">Excel</span>
+                <span class="tech-pill">DAX</span>
               </div>
             </div>
-          </div>
 
-          <div class="project-gallery">
-            <div class="gallery-grid">
-              <div class="gallery-item">
-                <img src="coubes.png" alt="Graphique des passages mensuels par année" class="gallery-img"
+            <!-- Galerie épurée -->
+            <div class="project-visuals">
+              <div class="visual-showcase">
+                <img src="coubes.png" alt="Évolution des passages mensuels" class="showcase-img"
                   data-zoom="coubes.png" />
-                <div class="gallery-caption">Évolution des passages mensuels (2020-2022)</div>
               </div>
-              <div class="gallery-item">
-                <img src="diagrame en batton.png" alt="Clients inactifs depuis plus de 6 mois" class="gallery-img"
-                  data-zoom="diagrame en batton.png" />
-                <div class="gallery-caption">Clients inactifs depuis plus de 6 mois</div>
-              </div>
-              <div class="gallery-item">
-                <img src="unnamed.png" alt="Répartition des désignations de passage" class="gallery-img"
-                  data-zoom="unnamed.png" />
-                <div class="gallery-caption">Répartition des désignations de passage</div>
-              </div>
-              <div class="gallery-item">
-                <img src="graph camebaire.png" alt="Proportion des désignations abonnement et forfait"
-                  class="gallery-img" data-zoom="graph camebaire.png" />
-                <div class="gallery-caption">Proportion des désignations abonnement et forfait</div>
+              <div class="visual-grid-small">
+                <div class="visual-thumb" data-zoom="diagrame en batton.png">
+                  <img src="diagrame en batton.png" alt="Clients inactifs" />
+                </div>
+                <div class="visual-thumb" data-zoom="graph camebaire.png">
+                  <img src="graph camebaire.png" alt="Répartition abonnements" />
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="project-results">
-            <h4>Résultats obtenus :</h4>
-            <ul>
-              <li>Identification de 14 clients inactifs depuis plus de 6 mois</li>
-              <li>69.4% des passages concernent le tarif réduit</li>
-              <li>81.1% des clients utilisent des abonnements</li>
-              <li>Recommandations pour améliorer la rétention client</li>
-            </ul>
           </div>
         </article>
       </div>

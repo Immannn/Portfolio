@@ -75,7 +75,7 @@
 
   // --- 3. 3D Tilt Effect (Vanilla JS) ---
   function initTiltEffect() {
-    const tiltElements = document.querySelectorAll('.tilt-element, .project-featured, .skill-card, .contact-card');
+    const tiltElements = document.querySelectorAll('.tilt-element, .project-featured, .project-card-modern, .skill-card, .contact-card');
 
     tiltElements.forEach(el => {
       el.addEventListener('mousemove', (e) => {
@@ -107,13 +107,18 @@
   const closeBtn = document.querySelector('.modal-close');
 
   if (modal) {
-    document.querySelectorAll('.gallery-img[data-zoom]').forEach(img => {
-      img.addEventListener('click', function () {
+    // Support both old gallery-img and new showcase/thumb classes
+    document.querySelectorAll('.gallery-img[data-zoom], .showcase-img[data-zoom], .visual-thumb[data-zoom]').forEach(el => {
+      el.addEventListener('click', function () {
         modal.style.display = 'block';
-        modalImg.src = this.src;
-        modalImg.alt = this.alt;
+        // Handle both img elements and containers with data-zoom
+        const imgEl = this.tagName === 'IMG' ? this : this.querySelector('img');
+        const zoomSrc = this.dataset.zoom || imgEl?.src;
+        modalImg.src = zoomSrc;
+        modalImg.alt = imgEl?.alt || '';
         const caption = this.closest('.gallery-item')?.querySelector('.gallery-caption');
         if (caption) modalCaption.textContent = caption.textContent;
+        else modalCaption.textContent = imgEl?.alt || '';
         document.body.style.overflow = 'hidden';
       });
     });
@@ -157,7 +162,7 @@
   }, { threshold: 0.1 });
 
   // Init animations elements
-  ['.section', '.skill-card', '.project-featured'].forEach(selector => {
+  ['.section', '.skill-card', '.project-featured', '.project-card-modern'].forEach(selector => {
     document.querySelectorAll(selector).forEach((el, index) => {
       // Set initial state via JS to avoid checking CSS
       if (!el.classList.contains('hero')) { // Don't hide hero initially to prevent flash
